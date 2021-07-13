@@ -49,44 +49,30 @@
       <p>To ensure quality vocational skills by providing, regulating, coordinating, promoting, and financing vocational education and training for national socio- economic development.”</p>
     </article>
   </section>
-  <div class="row">
+  <div class="center2">
+    <div class="row">
     
-    <div class="container">
-            <div class="col-12 col-sm-6 col-md-4 image-grid-item">
-                <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWEe2a15QlXOrWLQCtBiQdc45m452N_UIlcg&usqp=CAU');" class="image-grid-cover">
-                    <a  class="image-grid-clickbox"></a>
-                    <a  class="cover-wrapper">Men</a>
+      <div class="container">
+              <div class="col-12 col-sm-6 col-md-4 image-grid-item">
+                  <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWEe2a15QlXOrWLQCtBiQdc45m452N_UIlcg&usqp=CAU');" class="image-grid-cover2">
+                      <a  class="image-grid-clickbox2"></a>
+                      <a  class="cover-wrapper2">Men</a>
+                  </div>
+              </div>
+  
+              <div class="col-12 col-sm-6 col-md-4 image-grid-item">
+                <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCoYjLIQ4zYiEwddZDN9QDO9yVHdF1zNDV9NxjZmEBHLDsEE4nM3XX5TLLHqXmOuDDwaw&usqp=CAU');" class="image-grid-cover2">
+                    <a  class="image-grid-clickbox2"></a>
+                    <a  class="cover-wrapper2">Women</a>
                 </div>
             </div>
-
-            <div class="col-12 col-sm-6 col-md-4 image-grid-item">
-              <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCY11gZmgZ2AQwhvI6LlqSdcdakOutbccADQ&usqp=CAU');" class="image-grid-cover">
-                  <a  class="image-grid-clickbox"></a>
-                  <a  class="cover-wrapper">Women</a>
-              </div>
+              
           </div>
-            
-        </div>
-</div>
+  </div>
+  </div>
   
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>Column 2</h3>
-            <div style="background-image: url({{$item->gallery}});" class="image-grid-cover">
-              <a  class="cover-wrapper">{{$item->name}}</a>
-          
-            </div> 
-            <div class="col-sm-4">
-              <h3>Column 2</h3>
-              <div style="background-image: url({{$item->gallery}});" class="image-grid-cover">
-                <a  class="cover-wrapper">{{$item->name}}</a>
-            
-              </div> 
-      </div>
+  
       
-    </section>
     
   
   

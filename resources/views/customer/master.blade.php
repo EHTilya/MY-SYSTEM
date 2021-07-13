@@ -112,10 +112,10 @@
         width: 30%;
         padding: 10px;
     }
-    .center1{
+    .center2{
         margin: auto;
-        width: 90%;
-        padding: 10px;
+        padding: 10%;
+        padding-left: 20%;
     }
 
     body {
@@ -216,14 +216,45 @@ footer {
 
 .image-grid-cover {
     width: 100%;
+    min-height: 100px;
     background-size: cover;
-    min-height: 250px;
     position: relative;
     margin-bottom: 30px;
     text-shadow: rgba(0,0,0,.8) 0 1px 0;
     border-radius: 4px;
 }
-.image-grid-clickbox {
+.image-grid-clickbox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    z-index: 20;
+    background: rgba(0,0,0,.45);
+}
+.cover-wrapper {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    text-shadow: rgba(0,0,0,.8) 0 1px 0;
+    z-index: 21;
+    position: relative;
+    top: 10px;
+}
+
+.image-grid-cover2 {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 30px;
+    text-shadow: rgba(0,0,0,.8) 0 1px 0;
+    border-radius: 4px;
+}
+.image-grid-clickbox2 {
     position: absolute;
     top: 0;
     right: 0;
@@ -235,15 +266,15 @@ footer {
     z-index: 20;
     background: rgba(0,0,0,.45);
 }
-.cover-wrapper {
-    font-size: 18px;
+.cover-wrapper2 {
+    font-size: 20px;
     text-align: center;
     display: block;
     color: #fff;
     text-shadow: rgba(0,0,0,.8) 0 1px 0;
     z-index: 21;
     position: relative;
-    top: 80px;
+    top: 200px;
 }
 a, a:focus, a:hover {
     text-decoration: none;
