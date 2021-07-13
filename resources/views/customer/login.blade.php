@@ -22,13 +22,7 @@
               </form>  
 
         </div>
-        <h2>JavaScript Math</h2>
-        <button data-toggle="collapse" data-target="#demo">Collapsible</button>
-
-<div id="demo" class="collapse">
-Lorem ipsum dolor text....
-</div>
-    </div> 
-    
+        
+    </div>
 </div>    
 @endsection

@@ -37,6 +37,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::view('/kitambaa', 'customer/kitambaa');
         Route::view('/test', 'customer/test');
         Route::view('/contact', 'customer/contact');
+        Route::view('/blog', 'customer/blog');
         Route::view('/single', 'customer/blog-single');
 
         Route::view('/select', 'customer/select');

@@ -40,7 +40,7 @@ function men()
 }
 function women()
 {
-    $men= Product::where('sex','w')->get();
+    $women= Product::where('sex','w')->get();
     return view('customer/women',['women'=>$women]);
 }
 
