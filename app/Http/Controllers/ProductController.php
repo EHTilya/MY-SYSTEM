@@ -30,7 +30,7 @@ class ProductController extends Controller
     function post()
     {
         $post=Post::all();
-        return view('customer/test',['post'=>$post]);
+        return view('customer/blog',['post'=>$post]);
     }
 
 function men()
@@ -349,6 +349,7 @@ function search(Request $req)
             $feed->name = $req->name;
             $feed->email = $req->email;
             $feed->location = $req->location;
+            $feed->subject = $req->subject;
             $feed->comment = $req->comment;
             $feed->phone = $req->phone;
             $feed->save();

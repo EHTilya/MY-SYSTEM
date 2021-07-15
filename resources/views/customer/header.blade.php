@@ -79,7 +79,24 @@ if(Session::has('user'))
           </ul>
         </li>
         <li><a href="myorders">Orders</a></li>
-        <li><a href="/vitambaa">Vitambaa</a></li>
+        <li class="dropdown">
+          <a id="dLabel" role="button" data-toggle="dropdown"  data-target="#" href="/page.html">
+            Other <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+            <li class="dropdown">
+              <a tabindex="-1" href="/vitambaa">Vitambaa</a>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown">
+              <a tabindex="-1" href="/contact">Mawasiliano</a>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown">
+              <a tabindex="-1" href="/blog">Blog</a>
+            </li>
+          </ul>
+        </li>
         
       </ul> 
       @endif

@@ -281,7 +281,7 @@ a, a:focus, a:hover {
     text-decoration: none;
     outline: 0;
 }
-.modal-header, h4, .close {
+.modal-header, .close {
     background-color: #5cb85c;
     color:white !important;
     text-align: center;

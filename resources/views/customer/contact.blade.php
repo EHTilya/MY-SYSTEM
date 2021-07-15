@@ -196,7 +196,7 @@
 
 
 <div class="video">
-            <img src="https://i.ytimg.com/vi/cr3Bf53Lseo/maxresdefault.jpg" alt="logo"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTROOa0s27epxjM21I8WcuiB85o5-S2x2Hglw&usqp=CAU" alt="logo"/>
             <div class="overlay">
                 <div class="container">
                     <h2>contact me</h2>
@@ -208,13 +208,14 @@
                         <i class="fa fa-linkedin"></i>
                         <i class="fa fa-pinterest"></i>
                     </div>
-                    <form>
+                    <form action="/feeback" method="POST">
+                        @csrf
                         <input type="text" name="name" placeholder=" your name">
                         <input type="email" name="email" placeholder="your email">
                         <input type="tel" name="phone" placeholder="your phone">
-                        <input type="url" name="website" placeholder="your website">
+                        <input type="text" name="location" placeholder="your location">
                         <input type="text" name="subject" placeholder="subject">
-                        <textarea placeholder="your message"></textarea>
+                        <textarea name="comment" placeholder="your message"></textarea>
                         <button><div>send
                             <i class="fa fa-arrow-right"></i></div>
                         </button>
