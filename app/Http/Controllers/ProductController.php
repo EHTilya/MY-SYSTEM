@@ -353,7 +353,7 @@ function search(Request $req)
             $feed->comment = $req->comment;
             $feed->phone = $req->phone;
             $feed->save();
-            return redirect('contact');
+            return redirect('home');
 
         }
 

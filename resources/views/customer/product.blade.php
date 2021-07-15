@@ -280,53 +280,53 @@
       <div class="carousel carousel-showmanymoveone slide" id="itemslider">
         <div class="carousel-inner">
 
-          <div class="item active">
+          <div class="item active">6
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf6IY339vISMLroMDn7lQUFHsthBU47_U7ZQ&usqp=CAU" class="img-responsive center-block"></a>
-              <h4 class="text-center">MAYORAL SUKNJA</h4>
-              <h5 class="text-center">200,00 TK</h5>
+              <a href="detail/6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf6IY339vISMLroMDn7lQUFHsthBU47_U7ZQ&usqp=CAU" class="img-responsive center-block"></a>
+              <h4 class="text-center">Suruali</h4>
+              <h5 class="text-center">Tsh 10,000 </h5>
             </div>
           </div>
 
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <a href="#"><img src="images/women trouser3_.jpg" class="img-responsive center-block"></a>
-              <h4 class="text-center">MAYORAL KOŠULJA</h4>
-              <h5 class="text-center">800 TK</h5>
+              <a href="detail/21"><img src="images/women trouser3_.jpg" class="img-responsive center-block"></a>
+              <h4 class="text-center">Suruali</h4>
+              <h5 class="text-center">Tsh 18,000</h5>
             </div>
           </div>
 
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <a href="#"><img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=04aebe9a22884efa1a5f61e434215597&auto=format&fit=crop&w=500&q=60" class="img-responsive center-block"></a>
+              <a href="detail/20"><img src="images/women trouser2.jpg" class="img-responsive center-block"></a>
               <span class="badge">10%</span>
-              <h4 class="text-center">PANTALONE TERI 2</h4>
-              <h5 class="text-center">4000,00 TK</h5>
-              <h6 class="text-center">5000,00 TK</h6>
+              <h4 class="text-center">Suruali</h4>
+              <h5 class="text-center">Tsh 22,000</h5>
+              <h6 class="text-center">Tsh 12,000</h6>
             </div>
           </div>
 
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <a href="#"><img src="https://images.unsplash.com/photo-1531925470851-1b5896b67dcd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=91fe0ca1b5d72338a8aac04935b52148&auto=format&fit=crop&w=500&q=60" class="img-responsive center-block"></a>
-              <h4 class="text-center">CVETNA HALJINA</h4>
-              <h5 class="text-center">4000,00 RSD</h5>
+              <a href="detail/15"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv3CwD2uW7ROewKOiVhGZE4lOc3dOMDWhs0Q&usqp=CAU" class="img-responsive center-block"></a>
+              <h4 class="text-center">Shati Mikono mifupi</h4>
+              <h5 class="text-center">Tsh 12,000</h5>
             </div>
           </div>
 
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <a href="#"><img src="https://images.unsplash.com/photo-1516961642265-531546e84af2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=74065eec3c2f6a8284bbe30402432f1d&auto=format&fit=crop&w=500&q=60" class="img-responsive center-block"></a>
-              <h4 class="text-center">MAJICA FOTO</h4>
-              <h5 class="text-center">40,00 TK</h5>
+              <a href="detail/11"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFV0l1uscfVRNuugkGQch7m5eGMnmU31JOwg&usqp=CAU" class="img-responsive center-block"></a>
+              <h4 class="text-center">Sketi</h4>
+              <h5 class="text-center">Tsh 13,000</h5>
             </div>
           </div>
 
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-2">
-              <a href="#"><img src="https://images.unsplash.com/photo-1532086853747-99450c17fa2e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61a42a11f627b0d21d0df757d9b8fe23&auto=format&fit=crop&w=500&q=60" class="img-responsive center-block"></a>
-              <h4 class="text-center">MAJICA MAYORAL</h4>
-              <h5 class="text-center">100,00 TK</h5>
+              <a href="detail/38"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_yRTPZTVH2ZK9XnaVnc4WWBGhUZSCe33icQ&usqp=CAU" class="img-responsive center-block"></a>
+              <h4 class="text-center">Kaptula</h4>
+              <h5 class="text-center">Tsh 100,00 </h5>
             </div>
           </div>
 

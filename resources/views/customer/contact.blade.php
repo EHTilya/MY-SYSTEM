@@ -208,7 +208,7 @@
                         <i class="fa fa-linkedin"></i>
                         <i class="fa fa-pinterest"></i>
                     </div>
-                    <form action="/feeback" method="POST">
+                    <form action="/feedback" method="POST">
                         @csrf
                         <input type="text" name="name" placeholder=" your name">
                         <input type="email" name="email" placeholder="your email">
