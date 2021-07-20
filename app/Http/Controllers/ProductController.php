@@ -176,7 +176,7 @@ function search(Request $req)
                 $order->payment_method=$req->payment;
                 $order->address=$req->address;
                 $order->phone=$req->phone;
-                $order->description=$req-> input('description') ?:  'nothing';
+                $order->description=$req->description;
                 $order->tumbo_kiuno=$cart['tumbo_kiuno'];
                 $order->hipsi=$cart['hipsi'];
                 $order->paja=$cart['paja'];

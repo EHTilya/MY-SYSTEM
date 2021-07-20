@@ -42,8 +42,8 @@
 
                 <div class="form-group">
                   <label for="pwd">Control Number</label><br>
-                  <input id="demo" type="radio" name="payment" checked >
-                   <!--<span id="demo"  ></span>-->
+                  <input  type="radio" name="payment" checked >
+                   <span id="demo" ></span>
                    <script>
                     document.getElementById('demo').innerHTML= random(574155645, 999454545)
                    function random(min, max){
