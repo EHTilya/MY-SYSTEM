@@ -11,7 +11,7 @@ if(Session::has('user'))
 <nav class="navbar navbar-inverse "">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/home">Online Tailor</a>
+        <a class="navbar-brand" href="/home">VETA Tailor</a>
       </div>
       
       @if (Session::has('user'))
@@ -94,6 +94,10 @@ if(Session::has('user'))
             <li class="divider"></li>
             <li class="dropdown">
               <a tabindex="-1" href="/blog">Blog</a>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown">
+              <a tabindex="-1" href="/about">About Us</a>
             </li>
           </ul>
         </li>

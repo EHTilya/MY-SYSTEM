@@ -30,25 +30,26 @@ Route::group(['prefix' => 'admin'], function () {
         Session::forget('user');
         return redirect('/home');
     });
-    Route::get('ordernow',[ProductController::class,'orderNow']);
     
     Route::group(['middleware'=>['protectedPage']],function(){
+        Route::get('ordernow',[ProductController::class,'orderNow']);
         Route::get('/vitambaa',[ProductController::class,'vitambaa']);
         Route::view('/kitambaa', 'customer/kitambaa');
         Route::view('/test', 'customer/test');
         Route::view('/contact', 'customer/contact');
         Route::view('/blog2', 'customer/blog2');
         Route::view('/single', 'customer/blog-single');
+        Route::view('/about', 'customer/about');
 
         Route::view('/select', 'customer/select');
         Route::get('detail/{id}',[ProductController::class,'detail']);
         Route::get('removecart/{id}',[ProductController::class,'removeCart']);
         Route::post('/feedback',[ProductController::class,'feedback']);
-    Route::post('orderplace',[ProductController::class,'orderPlace']);
-    Route::get('myorders',[ProductController::class,'myOrders']);
-    Route::get('/blog',[ProductController::class,'post']);
-    Route::post('addToCart',[ProductController::class,'addToCart']);
-    Route::get('cartlist',[ProductController::class,'cartList']);
+        Route::post('orderplace',[ProductController::class,'orderPlace']);        
+        Route::get('myorders',[ProductController::class,'myOrders']);
+        Route::get('/blog',[ProductController::class,'post']);
+        Route::post('addToCart',[ProductController::class,'addToCart']);
+        Route::get('cartlist',[ProductController::class,'cartList']);
     
     // rutes for product sample type
     Route::get('/skirt',[ProductController::class,'skirt']);
@@ -70,7 +71,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/men',[ProductController::class,'men']);
     Route::get('/women',[ProductController::class,'women']);
 
-    Route::view('/register', 'customer/register');
+    Route::view('/register', 'customer/login');
     Route::view('/staff', 'staff/staff_Register');   
     Route::get('search',[ProductController::class,'search']);    
     Route::post('/register',[UserController::class,'register']);

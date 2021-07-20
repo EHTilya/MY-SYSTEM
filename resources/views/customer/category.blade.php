@@ -10,8 +10,8 @@
         </a>
         <div class="">
           <h3>{{$item->name}}</h3>
-          <h3>{{$item->category_id}}</h3>
-
+          <p>{{$item->category_id}}</p>
+          <p>{{$item->day}}</p>
         </div>
       </div>
       

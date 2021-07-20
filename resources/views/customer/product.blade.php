@@ -211,6 +211,8 @@
                 <div class="carousel-caption slider-text">
                   <h3>{{$item['name']}}</h3>
                   <p>{{$item['description']}}</p>
+                  <p>Siku: {{$item['day']}}</p>
+
                 </div>
               </div>
             @endforeach

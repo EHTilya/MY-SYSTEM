@@ -1,7 +1,7 @@
 @extends('customer/master')
 @section('content')
 
-    <div class="container custom-order">
+    <div class="container custom-order3">
         <div class="cl-sm-10">
             <table class="table">
                 <tbody>
@@ -42,8 +42,8 @@
 
                 <div class="form-group">
                   <label for="pwd">Control Number</label><br>
-                  <input type="radio" name="payment" checked>
-                   <span id="demo"></span>
+                  <input id="demo" type="radio" name="payment" checked >
+                   <!--<span id="demo"  ></span>-->
                    <script>
                     document.getElementById('demo').innerHTML= random(574155645, 999454545)
                    function random(min, max){
@@ -162,7 +162,8 @@
                           ya Malipo (Control Number) uliyopewa unapofanya Malipo</p>
                     </div>
                   </div>
-                </div>    
+                </div>
+                <br>    
                 <button type="submit" class="btn btn-success">Order Now</button>
               </form>
             

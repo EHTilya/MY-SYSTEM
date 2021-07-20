@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Online Tailor</title>
+    <title>VETA Tailor</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -16,9 +16,7 @@
     
 -->
 <!-- Stylesheets -->
-<link rel="stylesheet" href="bootstrap/bootstrap.css">
-<link rel="stylesheet" href="css/misc.css">
-<link rel="stylesheet" href="css/blue-scheme.css">
+<link rel="shortcut icon" href="images/veta.png" type="image/x-icon" />
 </head>
     
     
@@ -42,6 +40,9 @@
     }
     .custom-product{
         height: 400px;
+    }
+    .about{
+        height: 600px;
     }
     .custom-product2{
         height: 300px;
@@ -110,7 +111,7 @@
     }
     .center{
         margin: auto;
-        width: 30%;
+        width: 50%;
         padding: 10px;
     }
     .center2{

@@ -1,6 +1,6 @@
 @extends('customer/master')
 @section('content')
-<div class="custom-product">
+<div class="custom-product3">
     <div class="col-sm-10">  
         <div class="trending-wrapper">
             <h1>My Orders</h1>
