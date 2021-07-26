@@ -14,7 +14,6 @@ if(Session::has('user'))
         <a class="navbar-brand" href="/home">VETA Tailor</a>
       </div>
       
-      @if (Session::has('user'))
       <ul class="nav navbar-nav">
         <!--Wanaume-->
         <li class="dropdown">
@@ -78,7 +77,6 @@ if(Session::has('user'))
             </li>
           </ul>
         </li>
-        <li><a href="myorders">Orders</a></li>
         <li class="dropdown">
           <a id="dLabel" role="button" data-toggle="dropdown"  data-target="#" href="/page.html">
             Other <span class="caret"></span>
@@ -103,7 +101,7 @@ if(Session::has('user'))
         </li>
         
       </ul> 
-      @endif
+      
       <form class="navbar-form navbar-left" action="search">
         <div class="form-group">
           <input type="text" name="query" class="form-control search-box" placeholder="Search">
@@ -112,6 +110,7 @@ if(Session::has('user'))
       </form>
       <ul class="nav navbar-nav navbar-right">
         @if (Session::has('user'))
+        <li><a href="myorders">Orders</a></li>
         <li><a href="/cartlist"><span class="glyphicon glyphicon-shopping-cart"></span> cart({{$total}})</a></li>
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}} <span>{{Session::get('user')['lname']}}</span>

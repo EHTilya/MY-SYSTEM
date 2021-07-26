@@ -7,6 +7,7 @@ use App\Models\Product;
 use App\Models\Cart;
 use App\Models\Category;
 use App\Models\Order;
+use App\Models\Payment;
 use App\Models\Resource;
 use App\Models\Feedback;
 use App\Models\Post;
@@ -19,7 +20,7 @@ class ProductController extends Controller
     function index()
 {
         $order=Product::all();
-        return view('customer/product',['products'=>    $order]);
+        return view('customer/product',['products'=>$order]);
 }
     function vitambaa()
     {
@@ -79,24 +80,6 @@ function search(Request $req)
     {
         if($req->session()->has('user'))
         {
-            $req->validate([
-                'tumbo_kiuno'=>['required'],
-                'hipsi'=>['required'],
-                'paja'=>['required'],
-                'goti'=>['required'],
-                'upana_chini'=>['required'],
-                'fly'=>['required'],
-                'urefu'=>['required'],
-                'bega'=>['required'],
-                'kifua'=>['required'],
-                'urefu_mkono'=>['required'],
-                'upana_mkono'=>['required'],
-                'kiuno'=>['required'],
-                'half'=>['required'],
-                'kitambaa'=>['required']
-
-
-            ]);
 
                 $order= new Cart;
                 $order->users_id=$req->session()->get('user')['id'];
@@ -160,45 +143,56 @@ function search(Request $req)
         function orderPlace(Request $req)
         {
             $userId=Session::get('user')['id'];
+            $payment=$req->payment_no;
+            $pay=DB::table('payment')
+            ->where('user_id',$userId)
+            ->where('payment_no','=',$payment)
+            ->get();
+            
+        if(!$pay)
+        {
+            return "you have no yet pay";
+        }
+        else
+        {
+            $del_pay=Payment::where('user_id',$userId)->delete();
             $allCart=Cart::where('users_id',$userId)->get();
             foreach($allCart as $cart)
             {
-                $req->validate([
-                    'payment'=>['required'],
-                    'address'=>['required'],
-                    'phone'=>['required']
-                ]);
-
-                $order= new Order;
-                $order->product_id=$cart['product_id'];
-                $order->users_id=$cart['users_id'];
-                $order->order_status="pending";
-                $order->payment_method=$req->payment;
-                $order->address=$req->address;
-                $order->phone=$req->phone;
-                $order->description=$req->description;
-                $order->tumbo_kiuno=$cart['tumbo_kiuno'];
-                $order->hipsi=$cart['hipsi'];
-                $order->paja=$cart['paja'];
-                $order->goti=$cart['goti'];
-                $order->upana_chini=$cart['upana_chini'];
-                $order->fly=$cart['fly'];
-                $order->urefu=$cart['urefu'];
-                $order->bega=$cart['bega'];
-                $order->kifua=$cart['kifua'];
-                $order->urefu_mkono=$cart['urefu_mkono'];
-                $order->upana_mkono=$cart['upana_mkono'];
-                $order->kiuno=$cart['kiuno'];
-                $order->half=$cart['half'];
             
-                $order->kitambaa=$cart['kitambaa'];
-                $order->save();
-                $allCart=Cart::where('users_id',$userId)->delete();
+            $order= new Order;
+            $order->product_id=$cart['product_id'];
+            $order->users_id=$cart['users_id'];
+            $order->order_status="pending";
+            $order->payment_method="cash";
+            $order->address=$req->address;
+            $order->phone=$req->phone;
+            $order->description=$req->description;
+            $order->tumbo_kiuno=$cart['tumbo_kiuno'];
+            $order->hipsi=$cart['hipsi'];
+            $order->paja=$cart['paja'];
+            $order->goti=$cart['goti'];
+            $order->upana_chini=$cart['upana_chini'];
+            $order->fly=$cart['fly'];
+            $order->urefu=$cart['urefu'];
+            $order->bega=$cart['bega'];
+            $order->kifua=$cart['kifua'];
+            $order->urefu_mkono=$cart['urefu_mkono'];
+            $order->upana_mkono=$cart['upana_mkono'];
+            $order->kiuno=$cart['kiuno'];
+            $order->half=$cart['half'];
+        
+            $order->kitambaa=$cart['kitambaa'];
+            $order->save();
+            $allCart=Cart::where('users_id',$userId)->delete();
 
-            }
-            
-            return redirect('home');
+          }
+        
+         return redirect('home');
+    
         }
+    }
+        
 
         function myOrders()
         {

@@ -33,15 +33,6 @@ Route::group(['prefix' => 'admin'], function () {
     
     Route::group(['middleware'=>['protectedPage']],function(){
         Route::get('ordernow',[ProductController::class,'orderNow']);
-        Route::get('/vitambaa',[ProductController::class,'vitambaa']);
-        Route::view('/kitambaa', 'customer/kitambaa');
-        Route::view('/test', 'customer/test');
-        Route::view('/contact', 'customer/contact');
-        Route::view('/blog2', 'customer/blog2');
-        Route::view('/single', 'customer/blog-single');
-        Route::view('/about', 'customer/about');
-
-        Route::view('/select', 'customer/select');
         Route::get('detail/{id}',[ProductController::class,'detail']);
         Route::get('removecart/{id}',[ProductController::class,'removeCart']);
         Route::post('/feedback',[ProductController::class,'feedback']);
@@ -51,22 +42,33 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('addToCart',[ProductController::class,'addToCart']);
         Route::get('cartlist',[ProductController::class,'cartList']);
     
-    // rutes for product sample type
-    Route::get('/skirt',[ProductController::class,'skirt']);
-    Route::get('/s_shirt',[ProductController::class,'s_shirt']);
-    Route::get('/l_shirt',[ProductController::class,'l_shirt']);
-    Route::get('/m_trouse',[ProductController::class,'m_trouse']);
-    Route::get('/w_trouse',[ProductController::class,'w_trouse']);
-    Route::get('/short',[ProductController::class,'short']);
-    //route for product design type 
-    Route::get('/skirt2',[ProductController::class,'skirt2']);
-    Route::get('/s_shirt2',[ProductController::class,'s_shirt2']);
-    Route::get('/l_shirt2',[ProductController::class,'l_shirt2']);
-    Route::get('/m_trouse2',[ProductController::class,'m_trouse2']);
-    Route::get('/w_trouse2',[ProductController::class,'w_trouse2']);
-    Route::get('/short2',[ProductController::class,'short2']);
-
     });
+     // rutes for product sample type
+     Route::get('/skirt',[ProductController::class,'skirt']);
+     Route::get('/s_shirt',[ProductController::class,'s_shirt']);
+     Route::get('/l_shirt',[ProductController::class,'l_shirt']);
+     Route::get('/m_trouse',[ProductController::class,'m_trouse']);
+     Route::get('/w_trouse',[ProductController::class,'w_trouse']);
+     Route::get('/short',[ProductController::class,'short']);
+     //route for product design type 
+     Route::get('/skirt2',[ProductController::class,'skirt2']);
+     Route::get('/s_shirt2',[ProductController::class,'s_shirt2']);
+     Route::get('/l_shirt2',[ProductController::class,'l_shirt2']);
+     Route::get('/m_trouse2',[ProductController::class,'m_trouse2']);
+     Route::get('/w_trouse2',[ProductController::class,'w_trouse2']);
+     Route::get('/short2',[ProductController::class,'short2']);
+ 
+    
+    Route::get('/vitambaa',[ProductController::class,'vitambaa']);
+    Route::view('/kitambaa', 'customer/kitambaa');
+    Route::view('/test2', 'customer/test');
+    Route::view('/contact', 'customer/contact');
+    Route::view('/blog2', 'customer/blog2');
+    Route::view('/single', 'customer/blog-single');
+    Route::view('/about', 'customer/about');
+
+    Route::view('/select', 'customer/select');
+   
     Route::get('/test',[ProductController::class,'post']);
     Route::get('/men',[ProductController::class,'men']);
     Route::get('/women',[ProductController::class,'women']);

@@ -13,6 +13,7 @@
             @endforeach
         </div>
 </div>
+{{View::make('customer/footer')}}
 
 @endsection
 

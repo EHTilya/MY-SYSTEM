@@ -33,5 +33,6 @@
    </article>
  </section>
  
+ {{View::make('customer/footer')}}
 
 @endsection

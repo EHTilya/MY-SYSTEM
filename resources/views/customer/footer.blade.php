@@ -1,27 +1,13 @@
-<style>
-  html{ height:100%; }
-body{ min-height:100%; padding:0; margin:0; position:relative; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/footer.css">
 
-body::after{ content:''; display:block; height:100px; }
+</head>
+<body>
 
-footer{ 
-  position:absolute; 
-  bottom:0; 
-  width:100%; 
-  height:100px; 
-}
-
-
-/* FOR DEMO ONLY */
-body{ font:bold 1.2em/2.5 arial; text-align:center; }
-label{ cursor:pointer; display:inline-block; transition:1s ease; }
-:checked ~ label{ margin-bottom:1400px; }
-
-footer{ background:#DB8A8A; }
-</style>
-<header>HEADER</header>
-<article>
-  <input type='checkbox' id='c' />
-  <label for='c'>Toggle Content Height</label>
-</article>
-<footer>FOOTER</footer>
+</body>
+</html>
