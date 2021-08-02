@@ -33,7 +33,6 @@ Route::group(['prefix' => 'admin'], function () {
     
     Route::group(['middleware'=>['protectedPage']],function(){
         Route::get('ordernow',[ProductController::class,'orderNow']);
-        Route::get('detail/{id}',[ProductController::class,'detail']);
         Route::get('removecart/{id}',[ProductController::class,'removeCart']);
         Route::post('/feedback',[ProductController::class,'feedback']);
         Route::post('orderplace',[ProductController::class,'orderPlace']);        
@@ -58,7 +57,7 @@ Route::group(['prefix' => 'admin'], function () {
      Route::get('/w_trouse2',[ProductController::class,'w_trouse2']);
      Route::get('/short2',[ProductController::class,'short2']);
  
-    
+     Route::get('detail/{id}',[ProductController::class,'detail']);
     Route::get('/vitambaa',[ProductController::class,'vitambaa']);
     Route::view('/kitambaa', 'customer/kitambaa');
     Route::view('/test2', 'customer/test');

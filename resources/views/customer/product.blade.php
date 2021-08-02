@@ -18,10 +18,18 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
 <link rel="stylesheet" href="css/product.css">
+<link href='https://fonts.googleapis.com/css?family=Exo:400,900' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
+  
   <div class="custom-product">
+    @if (session('login'))
+    <p style="text-align: center;" class="alert alert-success">
+      {{ session('login')}}
+    </p>     
+    @endif
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -62,15 +70,60 @@
 
   <section>
     <article>
-      <h1>Vision</h1>
-      <p>“Tanzania with sufficient and competent artisans.”</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+            
+            <div class="row" id="slider-text">
+              <div class="col-md-6" >
+                <h2 class="text-center">Kwanini VETA Tailor</h2>
+              </div>
+            </div>
+                          <div class="row">
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <a href="/w3images/lights.jpg">
+                      <img src="/images/freedelivery.jpg" alt="Lights" style="width:100%">
+                      <div class="caption">
+                        <p>Lorem ipsum...</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <a href="/">
+                      <img src="/images/lowcost.png" alt="Nature" style="width:100%">
+                      <div class="caption">
+                        <p>Huduma zetu ni Nafuu pamoja na Ushonaji bora wa Nguo</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <a href="/w3images/fjords.jpg">
+                      <img src="/images/fabrics.png" alt="Fjords" style="width:100%">
+                      <div class="caption">
+                        <p>Lorem ipsum...</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            
+  
+          </div>
+  
+        </div>
+      </div>
     </article>
-
-    <article>
-      <h1>Mission</h1>
-      <p>To ensure quality vocational skills by providing, regulating, coordinating, promoting, and financing vocational education and training for national socio- economic development.”</p>
-    </article>
-  </section>
+    
+      <p>Tuna wa Mitindo mbalimbali ya kisasa Ushonaji </p>
+      <p>Tuna wa Aina mbalimbali za Vitambaa kutoka ndani na nje ya nchi</p>
+      <p>Tunatoa huduma ya Ushonaji bila yaUlazima wa Mteja kufika katika Tawi la Veta</p>
+      <p>Tunamfikishia Nguo Mteja wetu Eneo lolote alipo</p>
+    
   <div class="center2">
     <div class="row">
     
@@ -92,13 +145,18 @@
           </div>
   </div>
   </div>
+  <section>
+    <article>
+      <h1>Mission</h1>
+      <p>To ensure quality vocational skills by providing, regulating, coordinating, promoting, and financing vocational education and training for national socio- economic development.”</p>
+    </article>
+  </section>
   
 <!--Item slider text-->
-<h1 class="text-center"> Dress Design Slider</h1>
 <div class="container">
   <div class="row" id="slider-text">
     <div class="col-md-6" >
-      <h2>New Design Collections</h2>
+      <h2 class="text-center">Mitindo ya Kisasa zaidi</h2>
     </div>
   </div>
 </div>
@@ -171,6 +229,8 @@
     </div>
   </div>
 </div>
+</article>
+</section>
 <script>
 	$(document).ready(function(){
 

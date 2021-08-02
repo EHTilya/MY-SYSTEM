@@ -32,8 +32,8 @@ if(Session::has('user'))
             <li class="dropdown-submenu">
               <a tabindex="-1" href="#">Shati Mikono Mirefu</a>
               <ul class="dropdown-menu">
-                <li><a href="/l_shirt2">Mchoro</a></li>
-                <li><a href="l_shirt">Sample</a></li>
+                <li><a href="/l_shirt">Mchoro</a></li>
+                <li><a href="l_shirt2">Sample</a></li>
               </ul>
             </li>
             <li class="divider"></li>

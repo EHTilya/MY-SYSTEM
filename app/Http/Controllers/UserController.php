@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Models\user;
+use Session;
 use App\Models\Category;
 use Illuminate\Support\Facades\Hash;
 
@@ -21,23 +23,18 @@ class UserController extends Controller
         $user=User::where(['email'=>$req->email])->first();
         if(!$user || !Hash::check($req->password, $user->password))
         {
-            return "Username or password is not matched";
+            return back()->withErrors([
+                'password'=>['The provided password does not match our records']
+            ]);
         }
-        elseif($user->role_id== 1)
+        
+        else
         {
             $req->session()->put('user',$user);
-            return "mambo admin";
-        }
-        elseif($user->role_id == 2)
-        {
-            $req->session()->put('user',$user);
+            $req->session()->flash('login','Successful login');
             return redirect('home');
         }
-        elseif($user->role_id == 3)
-        {
-            $req->session()->put('user',$user);
-            return "mambo staff";
-        }
+        
     }
 
     function register(Request $req)
@@ -47,13 +44,26 @@ class UserController extends Controller
             'email'=>['required','string'],
             'password'=>['required']
         ]);
+        $user=User::where(['email'=>$req->email])->first();
+        if(!$user){
         $user= new User;
         $user->name=$req->name;
         $user->email=$req->email;
         $user->role_id=2;
         $user->password= Hash::make($req->password);
         $user->save();
+        $req->session()->flash('reg','Successful Registered');
         return redirect('login');
+        }
+        
+        else{
+            return back()->withErrors([
+                'email'=>['The email alredy used']
+            ]);
+
+        }
+
+        
     }
 
     function category(Request $req)

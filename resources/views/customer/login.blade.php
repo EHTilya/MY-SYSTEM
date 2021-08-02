@@ -15,20 +15,20 @@
 </head>
 
 <body>
+    <br>
+    <br>
         <div class="container" id="container">
             <!--Both Containers are special sign up and sign in-->
             <div class="form-container sign-up-container">
                 <form action="register" method="POST">
                   @csrf
                     <h1>Create Account</h1>
-                    <input type="text" placeholder="Name" name="name" />
-                    <span style="color: red">@error('name'){{$message}} @enderror</span>
+                    <input type="text" placeholder="Name" name="name" required/>
 
-                    <input type="email" placeholder="Email" name="email"/>
+                    <input type="email" placeholder="Email" name="email" required/>
                     <span style="color: red">@error('email'){{$message}} @enderror</span>
 
-                    <input type="password" placeholder="Password" name="password" />
-                    <span style="color: red">@error('password'){{$message}} @enderror</span>
+                    <input type="password" placeholder="Password" name="password" required/>
 
                     <button>Sign Up</button>
                 </form>
@@ -37,11 +37,11 @@
                 <form action="/login" method="POST">
                   @csrf
                     <h1>Sign in</h1>
-                    <input type="email" placeholder="Email" name="email" />
-                    <span style="color: red">@error('email'){{$message}} @enderror</span>
+                    <input type="email" placeholder="Email" name="email" required/>
 
-                    <input type="password" placeholder="Password" name="password" />
+                    <input type="password" placeholder="Password" name="password" required/>
                     <span style="color: red">@error('password'){{$message}} @enderror</span>
+
                     <button>Sign In</button>
                 </form>
             </div>
@@ -61,6 +61,8 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
         </div>
     
         <script src="./js/main.js"></script>

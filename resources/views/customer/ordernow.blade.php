@@ -15,10 +15,13 @@
   <div class="container custom-order3">
   <div class="content__inner">
     <div class="container">
-     
- 
       <h2 class="content__title">Click on steps or 'Prev' and 'Next' buttons</h2>
     </div>
+    @if (session('fail'))
+    <div class="alert alert-danger">
+      {{ session('fail')}}
+    </div>     
+    @endif
     <div class="container overflow-hidden">
       <div class="multisteps-form">
         <div class="row">

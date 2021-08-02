@@ -149,9 +149,10 @@ function search(Request $req)
             ->where('payment_no','=',$payment)
             ->get();
             
-        if(!$pay)
+        if($pay== "[]")
         {
-            return "you have no yet pay";
+            $req->session()->flash('fail','The Payment Number entered do not match our record..try again');
+            return redirect ('ordernow');
         }
         else
         {
