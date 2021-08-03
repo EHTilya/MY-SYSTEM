@@ -79,24 +79,17 @@ if(Session::has('user'))
         </li>
         <li class="dropdown">
           <a id="dLabel" role="button" data-toggle="dropdown"  data-target="#" href="/page.html">
-            Other <span class="caret"></span>
+            Ziada <span class="caret"></span>
           </a>
           <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
             <li class="dropdown">
               <a tabindex="-1" href="/vitambaa">Vitambaa</a>
-            </li>
-            <li class="divider"></li>
-            <li class="dropdown">
-              <a tabindex="-1" href="/contact">Mawasiliano</a>
-            </li>
+            </li>            
             <li class="divider"></li>
             <li class="dropdown">
               <a tabindex="-1" href="/blog">Blog</a>
             </li>
-            <li class="divider"></li>
-            <li class="dropdown">
-              <a tabindex="-1" href="/about">About Us</a>
-            </li>
+          
           </ul>
         </li>
         
@@ -106,11 +99,11 @@ if(Session::has('user'))
         <div class="form-group">
           <input type="text" name="query" class="form-control search-box" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-default">Search</button>
+        <button type="submit" class="btn btn-info">Tafuta</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         @if (Session::has('user'))
-        <li><a href="myorders">Orders</a></li>
+        <li><a href="myorders">Oda</a></li>
         <li><a href="/cartlist"><span class="glyphicon glyphicon-shopping-cart"></span> cart({{$total}})</a></li>
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}} <span>{{Session::get('user')['lname']}}</span>

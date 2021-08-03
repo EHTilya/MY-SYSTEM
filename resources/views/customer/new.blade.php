@@ -252,7 +252,6 @@ itemToClone.children(':first-child').clone()
 </script>
 <!-- Item slider end-->
 <br/><br/>
-{{View::make('customer/footer')}}
 
 </body>
 </html>

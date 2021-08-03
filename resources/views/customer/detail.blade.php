@@ -7,23 +7,24 @@
         <img class="detail-img" src="{{asset($data['gallery'])}}" alt="">
     </div>
     <div class="col-sm-6">
-        <a href="/home">Go Back</a>
-        <h2>{{$data['name']}}</h2>
-        <h3>Price:{{$data['price']}}</h3>
-        <h3>Details:{{$data['description']}}</h3>
-        <h3>Siku:{{$data['day']}}</h3>
+        <a href="/home">Rudi Nyuma</a>
+        <h2><strong>{{$data['name']}}</strong></h2>
+        <h3><strong>Gharama: </strong>Tsh {{$data['price']}}</h3>
+        <h3><strong>Maelezo:</strong> {{$data['description']}}</h3>
+        <h3><strong>Muda:</strong>siku {{$data['day']}}</h3>
         <br><br>
     
     </div>
 <div class="custom-product3 ">
     <div class="center" >
-      <a   href="#demo" class="btn btn-info" data-toggle="collapse">Weka Vipimo</a>
+      <a   href="#demo" class="btn btn-info" data-toggle="collapse">Weka Vipimo Katika sm/cm</a>
   <div id="demo" class="collapse">
     @if ($cat == 1)
                   
                   <!-- category 1-->
                   <form action="/addToCart" method="POST" role="form">
                     @csrf
+                    <br>
                     <div class="form-row">
                       <div class="col">
                         <input type="hidden" name="product_id" value="{{$data['id']}}">
@@ -70,7 +71,7 @@
                   </div>
               
                   
-                      <button type="submit" class="btn btn-default btn-success btn-block"><span ></span> Add to Cart</button>
+                      <button type="submit" class="btn btn-default btn-success btn-block"><span ></span> Weka kwenye Cart</button>
                     </form>
                     
                   @elseif ($cat == 2)
@@ -120,7 +121,7 @@
                       </select>                      
                   </div>
               
-                      <button type="submit" class="btn btn-default btn-success btn-block"><span ></span> Add to Cart</button>
+                      <button type="submit" class="btn btn-default btn-success btn-block"><span ></span> Weka kwenye Cart</button>
                     </form>
                   
                   @elseif ($cat == 3)
@@ -164,7 +165,7 @@
                       </select>                      
                   </div>
                              
-                      <button type="submit" class="btn btn-default btn-success btn-block"><span ></span> Add to Cart</button>
+                      <button type="submit" class="btn btn-default btn-success btn-block"><span ></span> Weka kwenye Cart</button>
                     </form>
 
                 @elseif ($cat == 4)
@@ -207,7 +208,7 @@
                         @endforeach
                       </select>                      
                   </div>
-                      <button type="submit" class="btn btn-default btn-success btn-block"><span ></span> Add to Cart</button>
+                      <button type="submit" class="btn btn-default btn-success btn-block"><span ></span> Weka kwenye Cart</button>
                     </form>
 
                   @elseif ($cat == 5)
@@ -251,7 +252,7 @@
                       </select>                      
                   </div>
                             
-                      <button type="submit" class="btn btn-default btn-success btn-block"><span ></span> Add to Cart</button>
+                      <button type="submit" class="btn btn-default btn-success btn-block"><span ></span> Weka kwenye Cart</button>
                     </form>
 
                   @elseif ($cat == 6)          
@@ -296,7 +297,7 @@
                       </select>                      
                   </div>
                          
-                      <button type="submit" class="btn btn-default btn-success btn-block"><span ></span> Add to Cart</button>
+                      <button type="submit" class="btn btn-default btn-success btn-block"><span ></span> Weka kwenye Cart</button>
                     </form>
 
                
@@ -333,7 +334,7 @@
                       </select>                      
                   </div>
                            
-                      <button type="submit" class="btn btn-default btn-success "><span ></span> Add to Cart</button>
+                      <button type="submit" class="btn btn-default btn-success "><span ></span> Weka kwenye Cart</button>
                     </form>
                     
             @endif
@@ -361,6 +362,5 @@
                
   </div>       
 </div>
-{{View::make('customer/footer')}}
 
   @endsection

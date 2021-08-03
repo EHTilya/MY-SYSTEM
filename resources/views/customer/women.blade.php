@@ -2,7 +2,7 @@
 @section('content')
 <div class="custom-product2">
  <div class="trending-wrapper">
-    <h3>Trending Design</h3>
+    <h3>Mitindo ya Kisasa ya Kike</h3>
     @foreach ($women as $item)
     <div class="trending-item">
         <a href="/detail/{{$item->id}}">
@@ -10,7 +10,6 @@
         </a>
         <div class="">
           <h3>{{$item->name}}</h3>
-          <h3>{{$item->category_id}}</h3>
 
         </div>
       </div>

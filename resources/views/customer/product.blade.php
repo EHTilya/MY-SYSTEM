@@ -31,21 +31,32 @@
       {{ session('login')}}
     </p>     
     @endif
+    @if (session('ujumbe'))
+    <p style="text-align: center;" class="alert alert-success">
+      {{ session('ujumbe')}}
+    </p>     
+    @endif
+    @if (session('cart'))
+    <p style="text-align: center;" class="alert alert-success">
+      {{ session('cart')}}
+    </p>     
+    @endif
+    @if (session('oda'))
+    <p style="text-align: center;" class="alert alert-success">
+      {{ session('oda')}}
+    </p>     
+    @endif
     
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
   
   <div class="jumbotron text-center">
-    <h1>Company</h1> 
-    <p>We specialize in blablabla</p> 
+    <h1>Online Tailoring Management System</h1> 
+    <p>Fundi Bora Wa Nguo Yako</p> 
     
   </div>
-  <div class="custom-product">
-    @if (session('login'))
-    <p style="text-align: center;" class="alert alert-success">
-      {{ session('login')}}
-    </p>     
-    @endif
+  <div class="custom-product">     
+    
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -88,9 +99,19 @@
   <div id="about" class="container-fluid">
     <div class="row">
       <div class="col-sm-8">
-        <h2>About Company Page</h2><br>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h2>Kuhusu Huduma Zetu</h2>
+        <h4>Online Tailoring Management System ni Mfumo unaomwezesha mteja wa VETA kupata Huduma za Ushonaji kwa njia rahisi ya Tovuti.</h4>
+        <p><strong>Kupitia Mfumo huu utaweza kupata Huduma kama vile</strong> 
+          <ul>
+            <li>Kuona na Kuchagua Aina mbalimbali za Mishono ya Nguo</li>
+            <li>Kuona ainambalimbali za Vitambaa Bora vya ushonaji</li>
+            <li>Kuweka Oda ya Mshono wa Nguo unayohitaji</li>
+            <li>Kuweka Vipimo vya Nguo kwa njia nyepesi</li>
+            <li>Maelekezo ya Namna ya kufanya malipo ya Nguo yako</li>
+            <li>Kutuma Ujumbe, Maoni au Swali juu ya Huduma zetu</li>
+            <li>Kuona Taarifa mbalimbali kupitia Blog yetu</li>
+          </ul>
+        </p>
       </div>
       <div class="col-sm-4">
       </div>
@@ -102,51 +123,50 @@
       <div class="col-sm-4">
       </div>
       <div class="col-sm-8">
-        <h2>Our Values</h2><br>
-        <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-        <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h2>Maadili Yetu</h2><br>
+        <h4><strong>DHAMIRA:</strong> Kufikisha Huduma bora ya Ushonaji kwa gharama nafuu huku tukizingatia na kujali Muda na Fedha ya Mteja wetu. Kwetu Mteja nu wa Thaman, hivyo Huduma BOra kwetu ni Utamaduni wetu ili kuhakikisha Mteja wetu anapeneza kupitia Huduma yetu ya Ushonaji.</h4><br>
+        <p><strong>MAONO:</strong> Kufanikiwa kuwa Sekta Bora ya ushonaji wa Nguo hapa Tanzania itakayochangia Maendeleo ya Kijamii na Kiuchumi ndani na nje ya Nchi. Maono haya tunaamini yatafikiwa kwa sababu Ya Umahiri wa waajiriwa wetu waliobobea katika fani mbalimbali ndani ya Taasisi yetu pamoja na matumizi ya Teknolojia ya kisasa katika Huduma zetu.</p>
       </div>
     </div>
   </div>
   
   <!-- Container (Services Section) -->
   <div id="services" class="container-fluid text-center">
-    <h2>What our Unique</h2>
+    <h2>Ubora wetu</h2>
     <br>
     <div class="row slideanim">
       <div class="col-sm-4">
-        <span class="glyphicon glyphicon-off logo-small"></span>
-        <h4>POWER</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <span class="glyphicon glyphicon-time logo-small"></span>
+        <h4>MUDA</h4>
+        <p>Tunazingatia Muda wa Mteja</p>
       </div>
       <div class="col-sm-4">
-        <span class="glyphicon glyphicon-heart logo-small"></span>
-        <h4>LOVE</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <span class="glyphicon glyphicon-shopping-cart logo-small"></span>
+        <h4>MACHAGUO MENGI</h4>
+        <p>Mishono mipya aina mbalimbali</p>
       </div>
       <div class="col-sm-4">
-        <span class="glyphicon glyphicon-lock logo-small"></span>
-        <h4>JOB DONE</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <span class="glyphicon glyphicon-phone logo-small"></span>
+        <h4>MTANDAO</h4>
+        <p>Tupo maeneo mengi</p>
       </div>
     </div>
     <br><br>
     <div class="row slideanim">
       <div class="col-sm-4">
-        <span class="glyphicon glyphicon-leaf logo-small"></span>
-        <h4>GREEN</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <span class="glyphicon glyphicon-heart logo-small"></span>
+        <h4>UPENDO</h4>
+        <p>Tunathamini Wateja wetu</p>
       </div>
       <div class="col-sm-4">
         <span class="glyphicon glyphicon-certificate logo-small"></span>
-        <h4>CERTIFIED</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <h4>UBORA</h4>
+        <p>Teknolojia ya kisasa ya Ushonaji</p>
       </div>
       <div class="col-sm-4">
         <span class="glyphicon glyphicon-wrench logo-small"></span>
-        <h4 style="color:#303030;">HARD WORK</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <h4 style="color:#303030;">BIDII</h4>
+        <p>Weredi na Ufanisi katika Huduma</p>
       </div>
     </div>
   </div>
@@ -243,14 +263,14 @@
                 <div class="col-12 col-sm-6 col-md-4 image-grid-item">
                     <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWEe2a15QlXOrWLQCtBiQdc45m452N_UIlcg&usqp=CAU');" class="image-grid-cover2">
                         <a  class="image-grid-clickbox2"></a>
-                        <a href="/men" class="cover-wrapper2">Men</a>
+                        <a href="/men" class="cover-wrapper2">Wanaume</a>
                     </div>
                 </div>
     
                 <div class="col-12 col-sm-6 col-md-4 image-grid-item">
                   <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCoYjLIQ4zYiEwddZDN9QDO9yVHdF1zNDV9NxjZmEBHLDsEE4nM3XX5TLLHqXmOuDDwaw&usqp=CAU');" class="image-grid-cover2">
                       <a  class="image-grid-clickbox2"></a>
-                      <a href="/women" class="cover-wrapper2">Women</a>
+                      <a href="/women" class="cover-wrapper2">Wanawake</a>
                   </div>
               </div>
                 
@@ -259,29 +279,44 @@
     </div>
   <!-- Container (Contact Section) -->
   <div id="contact" class="container-fluid bg-grey">
-    <h2 class="text-center">CONTACT</h2>
+    <h2 class="text-center">MAWASILIANO</h2>
     <div class="row">
       <div class="col-sm-5">
-        <p>Contact us and we'll get back to you within 24 hours.</p>
-        <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-        <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+        <p>Waweza kuwasiliana Nasi kupitia.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> VETA Kihonda, Morogoro</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +255 757424615</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> emmanuelhtilya@gmail.com</p>
       </div>
       <div class="col-sm-7 slideanim">
-        <div class="row">
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        <form action="/feedback" method="POST">
+          @csrf
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Jina" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="phone" name="phone" placeholder="Simu" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="location" name="location" placeholder="Wilaya/Mtaa" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="subject" name="subject" placeholder="Kichwa cha Ujumbe" type="text" required>
+            </div>
           </div>
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          
+          <textarea class="form-control" id="comment" name="comment" placeholder="Ujumbe" required rows="5"></textarea><br>
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">Send</button>
+            </div>
           </div>
-        </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-        <div class="row">
-          <div class="col-sm-12 form-group">
-            <button class="btn btn-default pull-right" type="submit">Send</button>
-          </div>
-        </div>
+        </form>
+        
+        
       </div>
     </div>
   </div>

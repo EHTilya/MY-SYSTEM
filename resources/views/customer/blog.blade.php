@@ -30,7 +30,6 @@
 	</article>
 </div>
 @endforeach
-{{View::make('customer/footer')}}
 
 </body>
 

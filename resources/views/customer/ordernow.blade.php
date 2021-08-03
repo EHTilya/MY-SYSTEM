@@ -15,7 +15,7 @@
   <div class="container custom-order3">
   <div class="content__inner">
     <div class="container">
-      <h2 class="content__title">Click on steps or 'Prev' and 'Next' buttons</h2>
+      <h2 class="content__title">Bonyeza Kitufe 'Mbele' au 'Nyuma' </h2>
     </div>
     @if (session('fail'))
     <div class="alert alert-danger">
@@ -27,9 +27,9 @@
         <div class="row">
           <div class="col-12 col-lg-8 ml-auto mr-auto mb-4">
             <div class="multisteps-form__progress">
-              <button class="multisteps-form__progress-btn js-active" type="button" title="User Info">Total Amount</button>
-              <button class="multisteps-form__progress-btn" type="button" title="Address">Address</button>
-              <button class="multisteps-form__progress-btn" type="button" title="Order Info">Payment</button>
+              <button class="multisteps-form__progress-btn js-active" type="button" title="User Info">Jumla Kuu</button>
+              <button class="multisteps-form__progress-btn" type="button" title="Address">Anuani</button>
+              <button class="multisteps-form__progress-btn" type="button" title="Order Info">Malipo</button>
             </div>
           </div>
         </div>
@@ -45,27 +45,27 @@
                     <table class="table">
                         <tbody>
                           <tr>
-                            <td><b>Amount</b></td>
+                            <td><b>Jumla</b></td>
                             <td>Tsh {{$total}}</td>
                           </tr>
                           <tr>
-                            <td><b>Tax</b></td>
-                            <td>Tsh 0</td>
+                            <td><b>Kodi</b></td>
+                            <td>Tsh 100</td>
                           </tr>
                           <tr>
-                            <td><b>Delivery</b></td>
+                            <td><b>Gharama ya Kuletewa Nguo Ulipo</b></td>
                             <td>Tsh 2000</td>
                           </tr>
                           <tr>
-                            <td><b>Total Amount</b></td>
-                            <td>Tsh {{$total+2000}}</td>
+                            <td><b>Jumla Kuu</b></td>
+                            <td>Tsh {{$total+2100}}</td>
                           </tr>
                         </tbody>
                       </table>
                 </div>
                   
                   <div class="button-row d-flex mt-4">
-                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Mbele</button>
                   </div>
                 </div>
               </div>
@@ -74,20 +74,20 @@
                 <br>
                 <div class="multisteps-form__content">
                   <div class="form-group col-md-6">
-                    <input type="text" name="address" class="form-control" placeholder="enter your Address" required><br>
+                    <input type="text" name="address" class="form-control" placeholder="Weka anuani" required><br>
   
                   </div>
                     
                   <div class="form-group col-md-6">
-                    <input type="number" name="phone" class="form-control" placeholder="enter phone number" required><br>
+                    <input type="number" name="phone" class="form-control" placeholder="Weka namba ya simu" required><br>
                   </div>
                   
                   <div class="form-group">
-                    <textarea name="description" id="1" cols="60" rows="5" placeholder="Any Order description" required></textarea>
+                    <textarea name="description" id="1" cols="60" rows="5" placeholder="Maelezo ya ziada" required></textarea>
                 </div>
                   <div class="button-row d-flex mt-4">
-                    <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
-                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                    <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Nyuma</button>
+                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Mbele</button>
                   </div>
                 </div>
               </div>
@@ -97,7 +97,7 @@
                 <div class="multisteps-form__content">
                   <div class="row">
                     <div class="form-group col-md-6">
-                      <label for="pwd">Control Number</label><br>
+                      <label for="pwd">Control Namba</label><br>
                       <input  type="radio"  checked >
                        <span id="demo" ></span>
                     </div>
@@ -230,14 +230,13 @@
   
 </div> 
 
-</div> 
+                    </div> 
 <br><br>
-
-                        </div>
+                      </div>
                         <div class="row">
                           <div class="button-row d-flex mt-4 col-12">
-                      <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
-                      <button class="btn btn-success" type="submit" title="Send">Submit</button>
+                      <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Nyuma</button>
+                      <button class="btn btn-success" type="submit" title="Send">Tuma</button>
                     </div>
                   </div>
                 </div>

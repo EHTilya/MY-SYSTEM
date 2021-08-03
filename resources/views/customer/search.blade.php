@@ -7,7 +7,7 @@
     <div class="col-sm-4">
         
 <div class="trending-wrapper">
-    <h3>Results for Designs</h3>
+    <h3>Matokeo ya Utafutaji</h3>
     @foreach ($products as $item)
     <div class="searched-item">
         <a href="detail/{{$item['id']}}">
@@ -23,6 +23,5 @@
 </div>
     </div>
 </div>
-{{View::make('customer/footer')}}
 
 @endsection

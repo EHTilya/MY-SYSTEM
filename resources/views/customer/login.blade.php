@@ -17,12 +17,13 @@
 <body>
     <br>
     <br>
+    <div></div>
         <div class="container" id="container">
             <!--Both Containers are special sign up and sign in-->
             <div class="form-container sign-up-container">
                 <form action="register" method="POST">
                   @csrf
-                    <h1>Create Account</h1>
+                    <h1>Tengeneza Akaunti</h1>
                     <input type="text" placeholder="Name" name="name" required/>
 
                     <input type="email" placeholder="Email" name="email" required/>
@@ -30,7 +31,7 @@
 
                     <input type="password" placeholder="Password" name="password" required/>
 
-                    <button>Sign Up</button>
+                    <button>Register</button>
                 </form>
             </div>
             <div class="form-container sign-in-container">
@@ -50,13 +51,13 @@
             <div class="overlay-container">
                 <div class="overlay">
                     <div class="overlay-panel overlay-left">
-                        <h1>Welcome Back!</h1>
-                        <p style="color: white";>To keep connected with us please login with your personal info</p>
+                        <h1>Karibu Tena!</h1>
+                        <p style="color: white";> Ili Tuweze kukupa Huduma Bora zaidi Ingia kwa Akaunti yako</p>
                         <button class="ghost" id="signIn">Sign In</button>
                     </div>
                     <div class="overlay-panel overlay-right">
-                        <h1 style="color: white"; >Hello, Welcome on VETA Tailor!</h1>
-                        <p>Enter your personal details and start journey with us</p>
+                        <h1 style="color: white"; >Habari Yako, Karibu Sana  <strong>Oline Tailoring Management System!</strong></h1>
+                        <p>Ingiza Taarifa zako ili uanze nasi safari ya Kukuhudumia /p>
                         <button class="ghost" id="signUp">Register</button>
                     </div>
                 </div>
@@ -83,7 +84,6 @@ signInButton.addEventListener('click', ()=>
     container.classList.remove('right-panel-active')
 })
 </script>
-{{View::make('customer/footer')}}
 
 </body>
 </html>

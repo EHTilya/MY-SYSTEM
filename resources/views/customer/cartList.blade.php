@@ -3,7 +3,7 @@
 <div class="custom-product3">
     <div class="col-sm-10">  
         <div class="trending-wrapper">
-            <h3>Results for selected Design</h3>
+            <h3>Mishono Uliyochagua</h3>
             <div class="order-button">
                 <a class="btn btn-success" href="/ordernow">Order Now</a>
             </div>
@@ -33,6 +33,5 @@
 
     </div>
 </div>
-{{View::make('customer/footer')}}
 
 @endsection

@@ -100,6 +100,7 @@ function search(Request $req)
                 $order->kitambaa=$req->kitambaa;
 
                 $order->save();
+                $req->session()->flash('cart','Umeongeza Cart');
             return redirect('home');
             
         }
@@ -151,7 +152,7 @@ function search(Request $req)
             
         if($pay== "[]")
         {
-            $req->session()->flash('fail','The Payment Number entered do not match our record..try again');
+            $req->session()->flash('fail','Namba ya Malipo uliyoingiza  haipo au Umkosea..Jaribu tena');
             return redirect ('ordernow');
         }
         else
@@ -188,7 +189,7 @@ function search(Request $req)
             $allCart=Cart::where('users_id',$userId)->delete();
 
           }
-        
+          $req->session()->flash('oda','Oda Imetumwa');
          return redirect('home');
     
         }
@@ -348,6 +349,7 @@ function search(Request $req)
             $feed->comment = $req->comment;
             $feed->phone = $req->phone;
             $feed->save();
+            $req->session()->flash('ujumbe','Ujumbe Umetumwa');
             return redirect('home');
 
         }

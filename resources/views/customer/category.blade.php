@@ -2,7 +2,7 @@
 @section('content')
 <div class="custom-product2">
  <div class="trending-wrapper">
-    <h3>Trending Design</h3>
+    <h3>Mitindo Mipya</h3>
     @foreach ($dress as $item)
     <div class="trending-item">
         <a href="/detail/{{$item->id}}">
@@ -20,6 +20,5 @@
   
     
  
- {{View::make('customer/footer')}}
 
 @endsection
